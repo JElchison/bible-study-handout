@@ -39,7 +39,7 @@ Next, paste in the contents of `esvsb.out` into `handout.tex`, line by line.
 * For study comments that cover a single verse, paste each line between `\begin{studycomment}` and `\end{studycomment}` right before the corresponding verse numbers.  This will place them in the margin, right next to the verses they apply to.
 * For study comments that cover multiple verses, paste each line between `\begin{studycomment*}` and `\end{studycomment*}` right before the corresponding verse numbers.  This will place them inline, right before the verses they apply to.
 
-Other classes available for use (from [bible-study_handout.cls](bible-study_handout.cls)):
+Other classes available for use (from [bible-study-handout.cls](bible-study-handout.cls)):
 * `bookoutline`: shaded boxes for book outline
 * `studycommentinline`: study comments in column with Bible text (with indented margin if on odd pages)
 * `studyblock*`: full-width block of study notes (never indent margin)

@@ -233,4 +233,5 @@ tufte-latex/
 *.pdf
 *.out
 esv.txt
+esv.html
 esvsb.html

@@ -1,0 +1,3 @@
+[submodule "tufte-latex"]
+	path = tufte-latex
+	url = https://github.com/Tufte-LaTeX/tufte-latex

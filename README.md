@@ -1,6 +1,8 @@
 # bible-study-handout
 LaTeX-based handout for Bible study on a passage. Output format is PDF, meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
 
+For an example, see [sample-handout.pdf](sample-handout.pdf).
+
 ## Content Sources
 * Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api.
     * You're welcome to adapt the scripts to pull a different Bible version, if you wish

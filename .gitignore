@@ -232,4 +232,5 @@ TSWLatexianTemp*
 tufte-latex/
 *.pdf
 *.out
-esv.html
+esv.txt
+esvsb.html

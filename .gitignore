@@ -229,7 +229,6 @@ TSWLatexianTemp*
 # bible-study_handout
 ######################
 
-tufte-latex/
 *.pdf
 *.out
 esv.txt

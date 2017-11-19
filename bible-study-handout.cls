@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesClass{bible-study-handout}[2017/11/18 v1.0.0 Bible-Study-Handout class]
+\ProvidesClass{bible-study-handout}[2017/11/19 v1.0.0 Bible-Study-Handout class]
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{graphicx}
@@ -54,10 +54,10 @@
   {\begin{fullwidth}\ifthispageodd{\begin{changemargin}{1.5cm}{0cm}}{}\studycommentstyle}%
   {\ifthispageodd{\end{changemargin}}{}\end{fullwidth}}
 
-% <studycommentinline>: study comments in column with Bible text (with indented margin if on odd pages)
+% <studycommentinline>: study comments in column with Bible text (always with indented margin)
 \newenvironment{studycommentinline}%
-  {\ifthispageodd{\begin{changemargin}{1.5cm}{0cm}}{}\studycommentstyle}%
-  {\ifthispageodd{\end{changemargin}}{}}
+  {\begin{changemargin}{1.5cm}{0cm}\studycommentstyle}%
+  {\end{changemargin}}
 
 % <studyblock*>: full-width block of study notes (never indent margin)
 \newenvironment{studyblock*}%

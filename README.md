@@ -58,3 +58,5 @@ Optionally, to see the final product:
 xdg-open handout.pdf
 ```
 As mentioned above, this is meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
+
+Be sure to include all required copyright statements, to keep legal your usage of others' content.

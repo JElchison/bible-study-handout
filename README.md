@@ -1,7 +1,7 @@
 # bible-study-handout
 LaTeX-based handout for Bible study on a passage. Output format is PDF, meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
 
-For an example, see [sample-handout.pdf](sample-handout.pdf).
+See [sample-handout.pdf](sample-handout.pdf) for an example handout for Exodus 20.
 
 ## Content Sources
 * Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api.
@@ -43,14 +43,20 @@ Next, paste in the contents of `esvsb.out` into `handout.tex`, line by line.
 * For study comments that cover a single verse, paste each line between `\begin{studycomment}` and `\end{studycomment}` right before the corresponding verse numbers.  This will place them in the margin, right next to the verses they apply to.
 * For study comments that cover multiple verses, paste each line between `\begin{studycomment*}` and `\end{studycomment*}` right before the corresponding verse numbers.  This will place them inline, right before the verses they apply to.
 
-Other classes available for use (from [bible-study-handout.cls](bible-study-handout.cls)):
-* `bookoutline`: shaded boxes for book outline
-* `studycommentinline`: study comments in column with Bible text (with indented margin if on odd pages)
-* `studyblock*`: full-width block of study notes (never indent margin)
+Tips:
+* For any study comments that precede the Biblical text, you may wish to use `studyblock*` instead of `studycomment*` (as indentation isn't necessary)
+* For any `studycomment*` instances which overlap text from other `studycomment` instances, simply convert the `studycomment*` to `studycommentinline`.  This will pull the study comment to be inline with the Bible text.
+* You can add context via an outline of the book of the Bible via `bookoutline`
    
-See the example for how these styles are used.
+See the [sample-handout.pdf](sample-handout.pdf) for how these styles are used.
 
-Next, invoke the following:
+As mentioned above, this is meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
+
+Any remaining space in the handout (through the end of page 4) can be filled with your own LaTeX content, such as your main points, additional graphics, etc.
+
+Be sure to include all required copyright statements, to keep legal your usage of others' content.
+
+Once you're ready to render, invoke the following:
 ```
 make clean all
 ```
@@ -60,7 +66,3 @@ Optionally, to see the final product:
 xdg-open handout.pdf
 ```
 As mentioned above, this is meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
-
-Any remaining space in the handout (through the end of page 4) can be filled with your own LaTeX content, such as your main points, additional graphics, etc.
-
-Be sure to include all required copyright statements, to keep legal your usage of others' content.

@@ -20,7 +20,12 @@ Meant to run on Ubuntu
 * jq
 
 ## Getting Started
-Start by obtaining the ESV Bible text for your chosen passage into `esv.txt` using something like this:
+Start by downloading the submodule code:
+```
+git submodule update --init --recursive
+```
+
+Next, obtain the ESV Bible text for your chosen passage into `esv.txt` using something like this:
 ```
 curl -Lg -u #{YOUR_BIBLES_ORG_API_KEY}:X "https://bibles.org/v2/passages.js?q[]=dan9&version=eng-ESV&include_marginalia=true" | python -mjson.tool > esv.txt
 ```

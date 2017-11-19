@@ -32,7 +32,7 @@
 
 % <bookoutline>: shaded boxes for book outline
 \definecolor{shadecolor}{gray}{0.9}
-\ListProperties(Numbers1=R,Numbers2=L,Numbers3=a,Numbers4=r,Numbers5=l,Numbers6=z,Indent=.25cm,Hang=true,Align=move,Progressive=2.5ex,Style=\sffamily)
+\ListProperties(Numbers1=R,Numbers2=L,Numbers3=a,Numbers4=r,Numbers5=l,Numbers6=z,Indent=.25cm,Hang=true,Align=fixed,FinalSpace=1em,Progressive=2.5ex,Style=\sffamily)
 \newenvironment{bookoutline}%
   {\begin{snugshade*}\begin{easylist}}%
   {\end{easylist}\end{snugshade*}}

@@ -1,7 +1,7 @@
 # bible-study-handout
 LaTeX-based handout for Bible study on a passage. Output format is PDF, meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
 
-See [sample-handout.pdf](sample-handout.pdf) for an example handout for Exodus 20.
+See [sample-handout.pdf](sample-handout.pdf) for an example handout on Exodus 20.
 
 ## Content Sources
 * Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api.

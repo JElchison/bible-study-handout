@@ -47,6 +47,7 @@ Next, paste in the entire contents of `esv.out` into `handout.tex`.
 Next, paste in the contents of `esvsb.out` into `handout.tex`, line by line.
 * For study comments that cover a single verse, paste each line between `\begin{studycomment}` and `\end{studycomment}` right before the corresponding verse numbers.  This will place them in the margin, right next to the verses they apply to.
 * For study comments that cover multiple verses, paste each line between `\begin{studycomment*}` and `\end{studycomment*}` right before the corresponding verse numbers.  This will place them inline, right before the verses they apply to.
+  * Use `\noindent{}` if you're interrupting a paragraph
 
 Tips:
 * For any study comments that precede the Biblical text, you may wish to use `studyblock*` instead of `studycomment*` (as indentation isn't necessary)

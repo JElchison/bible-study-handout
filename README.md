@@ -9,6 +9,8 @@ For an example, see [sample-handout.pdf](sample-handout.pdf).
 * Study notes are from the **ESV Study Bible**.  You'll need to use your own account at https://www.esv.org/ that provides access to the ESV Study Bible.  If your account does not give you access to the ESV Study Bible, then you're free to find another source
     * You're welcome to adapt the scripts to pull study commentary from a different source, if you wish
 
+Optionally, you're free to include some sort of summary graphic at the beginning of your handout.  I happen to like the posters available per book from https://thebibleproject.com/explore/.
+
 ## Environment
 Meant to run on Ubuntu
 
@@ -58,3 +60,5 @@ Optionally, to see the final product:
 xdg-open handout.pdf
 ```
 As mentioned above, this is meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
+
+Be sure to include all required copyright statements, to keep legal your usage of others' content.

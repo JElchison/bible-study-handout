@@ -39,7 +39,7 @@ The tool used here is [curl-auth-csrf](https://github.com/JElchison/curl-auth-cs
 
 Next, invoke the following:
 ```
-make esv.out esvsb.out
+make clean esv.out esvsb.out
 ```
 
 Next, paste in the entire contents of `esv.out` into `handout.tex`.

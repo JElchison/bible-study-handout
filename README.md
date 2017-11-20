@@ -1,5 +1,5 @@
 # bible-study-handout
-LaTeX-based handout for Bible study on a passage. Output format is PDF, meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
+LaTeX-based handout for Bible study on a passage.  Handout style is based on [Tufte-LaTeX](https://github.com/Tufte-LaTeX/tufte-latex).  Output format is PDF, meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
 
 See [sample-handout.pdf](sample-handout.pdf) for an example handout on Exodus 20.  Keep in mind that pages 2 and 3 will be side-by-side in the middle of the 4-page booklet.
 
@@ -53,6 +53,7 @@ Tips:
 * For any study comments that precede the Biblical text, you may wish to use `studyblock*` instead of `studycomment*` (as indentation isn't necessary)
 * For any `studycomment*` instances which overlap text from other `studycomment` instances, simply convert the `studycomment*` to `studycommentinline`.  This will pull the study comment to be inline with the Bible text.
 * You can add context via an outline of the book of the Bible via `bookoutline`
+* For other hints, please see [Tufte-LaTeX](https://github.com/Tufte-LaTeX/tufte-latex)
    
 See the [sample-handout.pdf](sample-handout.pdf) for how these styles are used.
 

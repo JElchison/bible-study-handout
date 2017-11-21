@@ -13,6 +13,7 @@ This handout format is the product of many iterations.  Here are some of the goa
 * Provide more information in the handout than you intend to cover together as a group.  Generally, humans can read 6x faster than a presenter can speak.  This type of self-study can be done while the group as a whole is engaged in a related verbal discussion.
 * Show the passage of interest in context with the rest of its Bible book.  Show the passage interleaved within the book outline.
 * Optionally, show a summary graphic at the beginning of the handout that encompasses the entire book.  This helps the reader remember the overall story of the book--not just the passage at hand.
+* Good typography and visual appeal.  (Sadly, this is sometimes a lost art.)
 
 ## Content Sources
 * Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api.

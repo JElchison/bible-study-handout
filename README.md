@@ -6,15 +6,15 @@ See [sample-handout.pdf](sample-handout.pdf) for an example handout on Exodus 20
 ## Goals
 This handout format is the product of many iterations.  Here are some of the goals:
 
-* Provide all information needed to engage in a group study session on a single handout.  For lack of a better term, everyone can be on the same page.
-  * This way, at any given moment, each person in the group can be looking at different information (which is not true when presenting using slides, where everyone is looking at the same slide).  This encourages individuals to follow their own interest as he/she wades through a passage.
-* Provide all study information (from different sources) interleaved sequentially, so that the reader doesn't have to bounce between resources to engage deeper on a question or topic.  As a reader ponders a particular verse, the study note is inches away (instead of in a different book, device, or section).
-  * Keep the focus on the Biblical text, not the study notes
-* Provide more information in the handout than you intend to cover together as a group.  Generally, humans can read 6x faster than a presenter can speak.  This type of self-study can be done while the group as a whole is engaged in a related verbal discussion.
-* Show the passage of interest in context with the rest of its Bible book.  Show the passage interleaved within the book outline.
-* Optionally, show a summary graphic at the beginning of the handout that encompasses the entire book.  This helps the reader remember the overall story of the book--not just the passage at hand.
-* Good typography and visual appeal.  (Sadly, this is sometimes a lost art.)
-* Provide something physical that attendees can take with them to continue their study on their own time.
+* Provide all information needed to engage in a group study session on a **single handout**.  For lack of a better term, everyone can be on the same page.
+  * This way, at any given moment, each person in the group can be looking at different information (**parallel random access**).  (This is not true when a presenter uses slides, where everyone is looking at the same slide).  This encourages individuals to follow their own interest as he/she wades through a passage.
+* Provide all study information (from different sources) **interleaved sequentially**, so that the reader doesn't have to bounce between resources to engage deeper on a question or topic.  As a reader ponders a particular verse, the study note is inches away (instead of in a different book, device, or section).
+  * Keep the **focus on the Biblical text**, not the study notes
+* Provide more information in the handout than you intend to cover together as a group.  Generally, humans can read 6x faster than a presenter can speak.  This type of **self-study** can be done while the group as a whole is engaged in a related verbal discussion.
+* Show the passage of interest **in context with the rest of its Bible book**.  Show the passage interleaved within the book outline.
+* Optionally, show a summary graphic at the beginning of the handout that encompasses the entire book.  This helps the reader **remember the overall story of the book**--not just the passage at hand.
+* **Good typography** and visual appeal.  (Sadly, this is sometimes a lost art.)
+* Provide **something physical that attendees can take with them** to continue their study on their own time.
   * Alternatively, make this handout (digitally?) available for group members who were not able to attend the specific group study.
 
 ## Content Sources

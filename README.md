@@ -14,6 +14,8 @@ This handout format is the product of many iterations.  Here are some of the goa
 * Show the passage of interest in context with the rest of its Bible book.  Show the passage interleaved within the book outline.
 * Optionally, show a summary graphic at the beginning of the handout that encompasses the entire book.  This helps the reader remember the overall story of the book--not just the passage at hand.
 * Good typography and visual appeal.  (Sadly, this is sometimes a lost art.)
+* Provide something physical that attendees can take with them to continue their study on their own time.
+  * Alternatively, make this handout (digitally?) available for group members who were not able to attend the specific group study.
 
 ## Content Sources
 * Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api.

@@ -41,7 +41,7 @@ git submodule update --init --recursive
 
 Next, obtain the ESV Bible text for your chosen passage into `esv.txt` using something like this:
 ```
-curl -X GET --header 'Accept: application/json' --header 'Authorization: Token #{YOUR_ESV_ORG_API_KEY}' 'https://api.esv.org/v3/passage/html/?q=dan9&include-passage-references=false&include-verse-anchors=true&include-chapter-numbers=false&include-footnotes=false&include-surrounding-chapters-below=false' | python -mjson.tool > esv.txt
+curl -X GET --header 'Accept: application/json' --header 'Authorization: Token #{YOUR_ESV_ORG_API_KEY}' 'https://api.esv.org/v3/passage/html/?q=dan9&include-passage-references=false&include-chapter-numbers=false&include-first-verse-numbers=true&include-verse-numbers=true&include-footnotes=false&include-surrounding-chapters-below=false' | python -mjson.tool > esv.txt
 ```
 Be sure to replace `#{YOUR_ESV_ORG_API_KEY}` with your actual API Key.  Also, replace `dan9` with your chosen passage.
 

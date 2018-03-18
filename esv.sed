@@ -6,7 +6,7 @@ s|<span>\+</span>||g
 
 # headings
 s|<h2( [^>]*)?>([^<]+)</h2>|\n\n\\subsection{\2}|g
-s|<h3( [^>]*)?><a [^>]*></a>([^<]+)</h3>|\n\n\\subsection{\2}|g
+s|<h3( [^>]*)?>([^<]+)</h3>|\n\n\\subsection{\2}|g
 
 # replace <p> tags with 2 newlines
 s|<p( [^>]*)?>|\n\n|g
@@ -20,6 +20,8 @@ s|LORD|\\textsc{Lord}|g
 
 # verse numbers
 s|<sup( [^>]*)?>([^<]+)</sup>|\\V{\2}|g
+s|<b class="chapter-num"( [^>]*)?>([0-9]+)&nbsp;</b>|\\V{\2}|g
+s|<b class="verse-num"( [^>]*)?>([0-9]+)&nbsp;</b>|\\V{\2}|g
 
 # bold
 s|<strong( [^>]*)?>|\\textbf\{|g

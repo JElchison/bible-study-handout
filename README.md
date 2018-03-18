@@ -30,7 +30,7 @@ Meant to run on Ubuntu
 
 ## Prerequisites
 * LaTeX (Ubuntu installation instructions at https://help.ubuntu.com/community/LaTeX)
-* xpath
+* xpath (Ubuntu installation via `libxml-xpath-perl` package)
 * jq
 
 ## Getting Started

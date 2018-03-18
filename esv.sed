@@ -5,7 +5,8 @@
 s|<span>\+</span>||g
 
 # headings
-s|<h3( [^>]*)?>([^<]+)</h3>|\n\n\\subsection{\2}|g
+s|<h2( [^>]*)?>([^<]+)</h2>|\n\n\\subsection{\2}|g
+s|<h3( [^>]*)?><a [^>]*></a>([^<]+)</h3>|\n\n\\subsection{\2}|g
 
 # replace <p> tags with 2 newlines
 s|<p( [^>]*)?>|\n\n|g
@@ -15,6 +16,7 @@ s|<span class="nd">Lord</span>|\\textsc{Lord}|g
 s|<span class="divine-name small-caps"><span class="small-caps-upper">L</span><span class="small-caps-lower">ord</span></span>|\\textsc{Lord}|g
 s|<span class="time small-caps"><span class="small-caps-lower">b.c.</span></span>|\\textsc{b.c.}|g
 s|<span class="time small-caps"><span class="small-caps-lower">a.d.</span></span>|\\textsc{a.d.}|g
+s|LORD|\\textsc{Lord}|g
 
 # verse numbers
 s|<sup( [^>]*)?>([^<]+)</sup>|\\V{\2}|g

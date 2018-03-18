@@ -41,7 +41,7 @@ git submodule update --init --recursive
 
 Next, obtain the ESV Bible text for your chosen passage into `esv.txt` using something like this:
 ```
-curl -Lg -u #{YOUR_BIBLES_ORG_API_KEY}:X "https://bibles.org/v2/passages.js?q[]=dan9&version=eng-ESV&include_marginalia=true" | python -mjson.tool > esv.txt
+curl -X GET --header 'Accept: application/json' --header 'Authorization: Token #{YOUR_ESV_ORG_API_KEY}' 'https://api.esv.org/v3/passage/html/?q=dan9&include-passage-references=false&include-verse-anchors=true&include-chapter-numbers=false&include-footnotes=false&include-surrounding-chapters-below=false' | python -mjson.tool > esv.txt
 ```
 Be sure to replace `#{YOUR_BIBLES_ORG_API_KEY}` with your actual API Key.  Also, replace `dan9` with your chosen passage.
 
@@ -68,7 +68,7 @@ Tips:
 * For any `studycomment*` instances which overlap text from other `studycomment` instances, simply convert the `studycomment*` to `studycommentinline`.  This will pull the study comment to be inline with the Bible text.
 * You can add context via an outline of the book of the Bible via `bookoutline`
 * For other hints, please see [Tufte-LaTeX](https://github.com/Tufte-LaTeX/tufte-latex)
-   
+
 See the [sample-handout.pdf](sample-handout.pdf) for how these styles are used.
 
 As mentioned above, this is meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.

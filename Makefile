@@ -11,7 +11,7 @@ esvsb.out: esv.sed esvsb.html
 	xpath -q -e '/div/div[@rel]/p/..' esvsb.html | sed -r -f esv.sed > $@
 
 esv.html: esv.txt
-	jq -r '.response.search.result.passages[0].text' esv.txt > $@
+	jq -r '.passages[0]' esv.txt > $@
 
 clean:
 	rm -fv handout.pdf esv.out esvsb.out esv.html

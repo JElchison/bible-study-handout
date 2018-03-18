@@ -18,8 +18,8 @@ This handout format is the product of many iterations.  Here are some of the goa
   * Alternatively, make this handout (digitally?) available for group members who were not able to attend the specific group study.
 
 ## Content Sources
-* Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api.
-    * You're welcome to adapt the scripts to pull a different Bible version, if you wish
+* Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at https://api.esv.org/account/.
+    * You're welcome to adapt the scripts to pull a different Bible version from another source, if you wish
 * Study notes are from the **ESV Study Bible**.  You'll need to use your own account at https://www.esv.org/ that provides access to the ESV Study Bible.  If your account does not give you access to the ESV Study Bible, then you're free to find another source
     * You're welcome to adapt the scripts to pull study commentary from a different source, if you wish
 
@@ -43,7 +43,7 @@ Next, obtain the ESV Bible text for your chosen passage into `esv.txt` using som
 ```
 curl -X GET --header 'Accept: application/json' --header 'Authorization: Token #{YOUR_ESV_ORG_API_KEY}' 'https://api.esv.org/v3/passage/html/?q=dan9&include-passage-references=false&include-verse-anchors=true&include-chapter-numbers=false&include-footnotes=false&include-surrounding-chapters-below=false' | python -mjson.tool > esv.txt
 ```
-Be sure to replace `#{YOUR_BIBLES_ORG_API_KEY}` with your actual API Key.  Also, replace `dan9` with your chosen passage.
+Be sure to replace `#{YOUR_ESV_ORG_API_KEY}` with your actual API Key.  Also, replace `dan9` with your chosen passage.
 
 Next, obtain the ESV Study Bible notes for your chosen passage into `esvsb.html` using something like this:
 ```

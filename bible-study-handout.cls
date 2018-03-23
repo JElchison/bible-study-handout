@@ -45,7 +45,7 @@
 \let\endchangemargin=\endlist
 
 % font for study comments
-\definecolor{darkgray}{gray}{0.6}
+\definecolor{darkgray}{gray}{0.5}
 \newcommand{\studycommentstyle}{\scriptsize\sffamily\color{darkgray}}
 
 % <studycomment>: study comments (show in gray to ensure Bible text stands out)

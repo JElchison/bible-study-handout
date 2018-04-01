@@ -20,7 +20,7 @@ This handout format is the product of many iterations.  Here are some of the goa
 ## Content Sources
 * Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at https://api.esv.org/account/.
     * You're welcome to adapt the scripts to pull a different Bible version from another source, if you wish
-    * Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api
+        * Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api
 * Study notes are from the **ESV Study Bible**.  You'll need to use your own account at https://www.esv.org/ that provides access to the ESV Study Bible.  If your account does not give you access to the ESV Study Bible, then you're free to find another source
     * You're welcome to adapt the scripts to pull study commentary from a different source, if you wish
 

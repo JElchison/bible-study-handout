@@ -20,6 +20,7 @@ This handout format is the product of many iterations.  Here are some of the goa
 ## Content Sources
 * Bible text is from the **ESV**.  Anyone can register to obtain your own (free) API Key at https://api.esv.org/account/.
     * You're welcome to adapt the scripts to pull a different Bible version from another source, if you wish
+    * Anyone can register to obtain your own (free) API Key at http://bibles.org/pages/api
 * Study notes are from the **ESV Study Bible**.  You'll need to use your own account at https://www.esv.org/ that provides access to the ESV Study Bible.  If your account does not give you access to the ESV Study Bible, then you're free to find another source
     * You're welcome to adapt the scripts to pull study commentary from a different source, if you wish
 
@@ -44,6 +45,11 @@ Next, obtain the ESV Bible text for your chosen passage into `esv.txt` using som
 curl -X GET --header 'Accept: application/json' --header 'Authorization: Token #{YOUR_ESV_ORG_API_KEY}' 'https://api.esv.org/v3/passage/html/?q=dan9&include-passage-references=false&include-chapter-numbers=false&include-first-verse-numbers=true&include-verse-numbers=true&include-footnotes=false&include-surrounding-chapters-below=false' | python -mjson.tool > esv.txt
 ```
 Be sure to replace `#{YOUR_ESV_ORG_API_KEY}` with your actual API Key.  Also, replace `dan9` with your chosen passage.
+
+If you're pulling a non-ESV version from bibles.org, use following instead:
+```
+curl -Lg -u #{YOUR_BIBLES_ORG_API_KEY}:X "https://bibles.org/v2/passages.js?q[]=dan9&version=eng-ESV&include_marginalia=true" | python -mjson.tool > esv.txt
+```
 
 Next, obtain the ESV Study Bible notes for your chosen passage into `esvsb.html` using something like this:
 ```

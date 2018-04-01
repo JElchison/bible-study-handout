@@ -48,7 +48,7 @@ Be sure to replace `#{YOUR_ESV_ORG_API_KEY}` with your actual API Key.  Also, re
 
 If you're pulling a non-ESV version from bibles.org, use following instead:
 ```
-curl -Lg -u #{YOUR_BIBLES_ORG_API_KEY}:X "https://bibles.org/v2/passages.js?q[]=dan9&version=eng-ESV&include_marginalia=true" | python -mjson.tool > bible.txt
+curl -Lg -u #{YOUR_BIBLES_ORG_API_KEY}:X "https://bibles.org/v2/passages.js?q[]=dan9&version=spa-RVR1960&include_marginalia=true" | python -mjson.tool > bible.txt
 ```
 
 Next, obtain the ESV Study Bible notes for your chosen passage into `study.html` using something like this:
@@ -59,7 +59,7 @@ The tool used here is [curl-auth-csrf](https://github.com/JElchison/curl-auth-cs
 
 Next, invoke the following:
 ```
-make clean esv.out bible.out study.out
+make clean sources
 ```
 
 Next, paste in the entire contents of `esv.out` (`bible.out`) into `handout.tex`.

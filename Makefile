@@ -1,6 +1,8 @@
 all: handout.pdf
 
-handout.pdf: handout.tex esv.out bible.out study.out
+sources: esv.out bible.out study.out
+
+handout.pdf: handout.tex sources
 	pdflatex handout
 	pdflatex handout
 
@@ -22,4 +24,4 @@ bible.html: bible.txt
 clean:
 	rm -fv handout.pdf esv.out bible.out study.out esv.html bible.html
 
-.PHONY: all clean
+.PHONY: all clean sources

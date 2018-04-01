@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesClass{bible-study-handout}[2017/11/20 v1.1.0 Bible-Study-Handout class]
+\ProvidesClass{bible-study-handout}[2018/04/01 v1.1.1 Bible-Study-Handout class]
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{graphicx}
@@ -35,7 +35,7 @@
 
 % <bookoutline>: shaded boxes for book outline
 \definecolor{shadecolor}{gray}{0.9}
-\ListProperties(Numbers1=R,Numbers2=L,Numbers3=a,Numbers4=r,Numbers5=l,Numbers6=z,Indent=.25cm,Hang=true,Align=fixed,FinalSpace=1em,Progressive=2.5ex,Style=\sffamily)
+\ListProperties(Numbers1=R,Numbers2=L,Numbers3=a,Numbers4=r,Numbers5=l,Numbers6=z,Indent=.25cm,Hang=true,Align=fixed,FinalSpace=1.25em,Progressive=2.5ex,Style=\sffamily)
 \newenvironment{bookoutline}%
   {\begin{snugshade*}\begin{easylist}}%
   {\end{easylist}\end{snugshade*}}

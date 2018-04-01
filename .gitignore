@@ -225,13 +225,54 @@ TSWLatexianTemp*
 *-tags.tex
 
 
+########
+# Linux
+########
+
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+
+######
+# vim
+######
+
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+
+
 ######################
-# bible-study_handout
+# bible-study-handout
 ######################
 
 *.pdf
 *.out
 esv.txt
 esv.html
-esvsb.html
+bible.txt
+bible.html
+study.html
 03-04_Exodus_art_FNL.jpg

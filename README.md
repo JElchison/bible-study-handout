@@ -48,23 +48,23 @@ Be sure to replace `#{YOUR_ESV_ORG_API_KEY}` with your actual API Key.  Also, re
 
 If you're pulling a non-ESV version from bibles.org, use following instead:
 ```
-curl -Lg -u #{YOUR_BIBLES_ORG_API_KEY}:X "https://bibles.org/v2/passages.js?q[]=dan9&version=eng-ESV&include_marginalia=true" | python -mjson.tool > esv.txt
+curl -Lg -u #{YOUR_BIBLES_ORG_API_KEY}:X "https://bibles.org/v2/passages.js?q[]=dan9&version=eng-ESV&include_marginalia=true" | python -mjson.tool > bible.txt
 ```
 
-Next, obtain the ESV Study Bible notes for your chosen passage into `esvsb.html` using something like this:
+Next, obtain the ESV Study Bible notes for your chosen passage into `study.html` using something like this:
 ```
-PYTHONIOENCODING=UTF-8 ./curl-auth-csrf.py -i "https://my.crossway.org/cas/login/?service=https://www.esv.org/login/" -d email=#{YOUR_ACCOUNT_EMAIL} https://www.esv.org/partials/study-content/dan9/esv-study-bible/ > esvsb.html
+PYTHONIOENCODING=UTF-8 ./curl-auth-csrf.py -i "https://my.crossway.org/cas/login/?service=https://www.esv.org/login/" -d email=#{YOUR_ACCOUNT_EMAIL} https://www.esv.org/partials/study-content/dan9/esv-study-bible/ > study.html
 ```
-The tool used here is [curl-auth-csrf](https://github.com/JElchison/curl-auth-csrf), but you're welcome to download `esvsb.html` manually if you want.  Be sure to replace `#{YOUR_ACCOUNT_EMAIL}` with your actual registered email address.  Also, replace `dan9` with your chosen passage.
+The tool used here is [curl-auth-csrf](https://github.com/JElchison/curl-auth-csrf), but you're welcome to download `study.html` manually if you want.  Be sure to replace `#{YOUR_ACCOUNT_EMAIL}` with your actual registered email address.  Also, replace `dan9` with your chosen passage.
 
 Next, invoke the following:
 ```
-make clean esv.out esvsb.out
+make clean esv.out bible.out study.out
 ```
 
-Next, paste in the entire contents of `esv.out` into `handout.tex`.
+Next, paste in the entire contents of `esv.out` (`bible.out`) into `handout.tex`.
 
-Next, paste in the contents of `esvsb.out` into `handout.tex`, line by line.
+Next, paste in the contents of `study.out` into `handout.tex`, line by line.
 * For study comments that cover a single verse, paste each line between `\begin{studycomment}` and `\end{studycomment}` right before the corresponding verse numbers.  This will place them in the margin, right next to the verses they apply to.
 * For study comments that cover multiple verses, paste each line between `\begin{studycomment*}` and `\end{studycomment*}` right before the corresponding verse numbers.  This will place them inline, right before the verses they apply to.
   * Use `\noindent{}` if you're interrupting a paragraph

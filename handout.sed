@@ -2,7 +2,7 @@
 :a;N;$!ba;s/\n/ /g
 
 # get rid of footnotes (for now)
-s|<span>\+</span>||g
+s|<span>[^<]*</span>||g
 
 # headings
 s|<h2( [^>]*)?>([^<]+)</h2>|\n\n\\subsection{\2}|g

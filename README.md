@@ -93,3 +93,8 @@ Optionally, to see the final product:
 xdg-open handout.pdf
 ```
 As mentioned above, this is meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
+
+You can use your printer driver to make that conversion, or convert it yourself in a new PDF using:
+```
+pdfbook --paper letter --papersize '{17in,11in}' --suffix 11x17 handout.pdf
+```

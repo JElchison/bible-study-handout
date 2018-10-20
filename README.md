@@ -32,7 +32,8 @@ Meant to run on Ubuntu
 ## Prerequisites
 * LaTeX (Ubuntu installation instructions at https://help.ubuntu.com/community/LaTeX)
 * xpath (Ubuntu installation via `libxml-xpath-perl` package)
-* jq
+* [jq](https://stedolan.github.io/jq/download/) (Ubuntu installation via `jq` package)
+* pdfbook (Ubuntu installation via `texlive-extra-utils` package)
 
 ## Getting Started
 Start by downloading the submodule code:
@@ -94,7 +95,4 @@ xdg-open handout.pdf
 ```
 As mentioned above, this is meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
 
-You can use your printer driver to make that conversion, or convert it yourself in a new PDF using:
-```
-pdfbook --paper letter --papersize '{17in,11in}' --suffix 11x17 handout.pdf
-```
+You can use your printer driver to make that conversion, or just use `handout-11x17.pdf`, which has already been converted for you.

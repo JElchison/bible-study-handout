@@ -1,7 +1,7 @@
 # bible-study-handout
 LaTeX-based handout for group study on a Bible passage.  Handout style is based on [Tufte-LaTeX](https://github.com/Tufte-LaTeX/tufte-latex).  Output format is PDF, meant to be printed on single 11x17 page, folded in half to make a 4-page booklet.
 
-See [sample-handout.pdf](sample-handout.pdf) for an example handout on Exodus 20.  Keep in mind that pages 2 and 3 will be side-by-side in the middle of the 4-page booklet.
+See [sample-handout.pdf](sample-handout.pdf) for an example handout on Exodus 20.  Keep in mind that pages 2 and 3 will be side-by-side in the middle of the 4-page booklet, as depicted in [sample-handout-11x17.pdf](sample-handout-11x17.pdf).
 
 ## Goals
 This handout format is the product of many iterations.  Here are some of the goals:
